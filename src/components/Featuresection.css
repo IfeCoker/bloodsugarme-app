@@ -1,0 +1,85 @@
+.features {
+  position: absolute;
+  height: 550px;
+  top: 920px;
+  left: 0;
+  right: 0;
+  padding: 70px 185px 90px 185px;
+  gap: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #1c242408;
+}
+h1 {
+  font-family: Merriweather;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1c2424;
+}
+.features-frame {
+  width: 984.28px;
+  height: 328px;
+  gap: 46px;
+  display: flex;
+  transition: all ease-out;
+  /* transform: scale(1.1); */
+}
+.features-frame1,
+.features-frame3 {
+  width: 265px;
+  height: 328px;
+  gap: 68px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.features-frame1a,
+.features-frame3a {
+  width: 213px;
+  height: 130px;
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.ellipse {
+  transition: all ease-in-out;
+}
+.ellipse:hover {
+  transform: scale(1.1);
+  /* transition: all; */
+}
+/* .features-frame:hover{
+    transform: scale(1.1);
+} */
+.ellipse-content {
+  font-family: Merriweather;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1c2424;
+}
+
+@media screen and (max-width: 960px) {
+  .features {
+    top: 805px;
+    gap: 30px;
+    padding: 70px 60px 90px 60px;
+  }
+}
+
+@media screen and (max-width: 425px){
+    .features-frame{
+        display: flex;
+        flex-direction: column;
+    }
+}

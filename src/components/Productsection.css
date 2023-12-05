@@ -1,0 +1,90 @@
+.product {
+  position: absolute;
+  /* width: 752px; */
+  height: 600px;
+  top: 1470px;
+  left: 0px;
+  right: 0px;
+
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 216px 40px 216px;
+  /* background-color: red; */
+}
+h1 {
+  font-family: Merriweather;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1c2424;
+}
+.productsection {
+  gap: 20px;
+  display: flex;
+}
+.productimage {
+  width: 269px;
+  height: 445.57px;
+  box-shadow: 0px 4px 30px 0px #00000040;
+}
+.productmessage {
+  width: 471px;
+  height: 273px;
+  gap: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.product-content {
+  font-family: Merriweather;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.action {
+  display: flex;
+  width: 439px;
+  height: 60px;
+  gap: 34px;
+}
+.demobutton {
+  width: 208px;
+  height: 60px;
+  padding: 10px 30px 10px 30px;
+  border-radius: 8px;
+  background: #009c95;
+  font-family: Merriweather;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #ffffff;
+  border: none;
+}
+.downloadbutton {
+  width: 197px;
+  height: 60px;
+  padding: 10px 30px 10px 30px;
+  border-radius: 8px;
+  gap: 8px;
+  background: #1c24240d;
+  font-family: Merriweather;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  border: none;
+}
+
+@media screen and (max-width: 960px) {
+  .product{
+    top: 1400px;
+    padding: 30px 216px 30px 216px;
+  }
+}
