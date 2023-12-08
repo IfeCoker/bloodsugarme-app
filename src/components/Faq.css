@@ -18,7 +18,7 @@ h1 {
   gap: 30px;
   display: flex;
   flex-direction: column;
-  /* background-color: red; */
+  background-color: transparent;
 }
 .faq {
   width: 100%;
@@ -71,10 +71,21 @@ h1 {
   font-size: 16px;
 }
 @media screen and (max-width: 960px) {
-  /* .faq-container {
-    max-width: 500px;
-  } */
   .faqsection{
     top: 2600px;
+
+  }
+
+}
+@media screen and (max-width: 768px) {
+  .faqsection{
+    /* top: 2650px; */
+    padding: 71px 180px 97px 150px;
+  }
+  .faq-container{
+    width: 400px;
+  }
+  .faq{
+    width: 100%;
   }
 }

@@ -1,17 +1,14 @@
 .product {
   position: absolute;
-  /* width: 752px; */
   height: 600px;
   top: 1470px;
   left: 0px;
   right: 0px;
-
   gap: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 40px 216px 40px 216px;
-  /* background-color: red; */
 }
 h1 {
   font-family: Merriweather;
@@ -52,6 +49,7 @@ h1 {
   width: 439px;
   height: 60px;
   gap: 34px;
+  /* background-color: aquamarine; */
 }
 .demobutton {
   width: 208px;
@@ -85,6 +83,36 @@ h1 {
 @media screen and (max-width: 960px) {
   .product{
     top: 1400px;
-    padding: 30px 216px 30px 216px;
+    padding: 10px 216px 30px 216px;
+    gap: 30px;
+  }
+  .productsection{
+    gap: 30px;
+  }
+  .productimage {
+    width: 260px;
+    height: 445.57px;
+    box-shadow: 0px 4px 30px 0px #00000040;
+  }
+  .productmessage {
+    width: 271px;
+    height: 273px;
+    gap: 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .action{
+    width: 250px;
+  }
+  .demobutton{
+    font-weight: 600;
+    line-height: 20px;
+    padding: 10px 15px 10px 15px;
+  }
+  .downloadbutton{
+    font-weight: 600;
+    line-height: 20px;
+    padding: 10px 15px 10px 15px;
   }
 }

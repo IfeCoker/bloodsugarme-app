@@ -59,37 +59,43 @@ function CarouselItem() {
   const [slide, setSlide] = useState(1);
 
   useEffect(() => {
-    const testimonialCarousel = document.getElementById('testimonial-carousel')
-    const prevBtn = document.querySelector('.prev')
-    const nextBtn = document.querySelector('.next')
-  
-    prevBtn.addEventListener('click', () =>{
-      console.log(" also working")
-    console.log(slide)
-      if(slide < testimonials.length){
-        let prevSlidePx = -(slide * 735)
-        testimonialCarousel.style.transform = `translateX(${prevSlidePx}px)`
-        setSlide(slide - 1)
-      }
-      if(slide === 0) {
-        setSlide(testimonials.length - 1)
-      }
-    })
+    const testimonialCarousel = document.getElementById("testimonial-carousel");
+    const prevBtn = document.querySelector(".prev-btn");
+    const nextBtn = document.querySelector(".next-btn");
 
-    nextBtn.addEventListener('click', () => {
-      console.log("working")
-    console.log(slide)
-      if (slide >= testimonials.length) {
-        let newSlidePx = -(slide * 735)        
-        testimonialCarousel.style.transform = `translateX(${newSlidePx}px)`
-        setSlide(slide + 1)
+    prevBtn.addEventListener("click", () => {
+      console.log("also working...slide: ", slide);
+
+      // if (slide > 1) {
+      //   let prevSlidePx = -((slide-1) * 735);
+      //   testimonialCarousel.style.transform = `translateX(${prevSlidePx}px)`;
+      //   setSlide(slide - 1);
+      // } else {
+      //   console.log("heree --->");
+      // }
+
+      // if (slide === 1) {
+      //   let newSlidePx = -(2 * 735);
+      //   testimonialCarousel.style.transform = `translateX(${newSlidePx}px)`;
+      //   setSlide(testimonials.length);
+      // }
+    });
+
+    nextBtn.addEventListener("click", () => {
+      console.log("working...slide: ", slide);
+      if (slide < testimonials.length) {
+        let newSlidePx = -(slide * 735);
+        testimonialCarousel.style.transform = `translateX(${newSlidePx}px)`;
+        setSlide(slide + 1);
       }
-      if(slide === testimonials.length) {
-        setSlide(0)
+      if (slide === testimonials.length) {
+        let newSlidePx = -0;
+        testimonialCarousel.style.transform = `translateX(${newSlidePx}px)`;
+        setSlide(1);
       }
-    })
-  }, [slide])
-	
+    });
+  }, [slide]);
+
   // const nextSlide = () => {
   //   const testimonialCarousel = document.getElementById('testimonial-carousel')
   //   console.log("working")
@@ -103,22 +109,16 @@ function CarouselItem() {
   //   console.log("also working");
   //   setSlide(slide === 0 ? testimonials.length - 1 : slide - 1);
   // };
-  
-
-  
 
   return (
     <div className="main">
       <div className="circle-left">
-        <div className="circle">
-          <FontAwesomeIcon
-            icon={faAngleLeft}
-            className="prev"
-          />
+        <div className="circle prev-btn">
+          <FontAwesomeIcon icon={faAngleLeft} className="prev" />
         </div>
       </div>
 
-      <div className="testimonial-container" >
+      <div className="testimonial-container">
         <div className="testimonial-carousel" id="testimonial-carousel">
           {testimonials.map((item) => {
             return (
@@ -133,11 +133,8 @@ function CarouselItem() {
       </div>
 
       <div className="circle-right">
-        <div className="circle">
-          <FontAwesomeIcon
-            icon={faAngleRight}
-            className="next"
-          />
+        <div className="circle next-btn">
+          <FontAwesomeIcon icon={faAngleRight} className="next" />
         </div>
       </div>
     </div>
@@ -145,26 +142,8 @@ function CarouselItem() {
 }
 
 export default CarouselItem;
-// <div>
-//     <div className='quote1'>
-//     <FontAwesomeIcon icon={faQuoteLeft} className='leftquote'/>
-//     </div>
-//     <div className='quote2'>
-//         <FontAwesomeIcon icon={faQuoteRight} className='rightquote'/>
-//     </div>
-//     <p className='testimonials-content'>{testimonial.content}</p>
-//     <div className='divider'></div>
-//     <div className='testimonal-avatar'>
-//      <img src='Ellipse5.png' alt='testimonal-avatar' className='avatar'/>
-//         <div className='avatar-details'>
-//         <p className='avatar-title'>{testimonial.avatarTitle}</p>
-//         <p className='avatar-role'>{testimonial.avatarRole}</p>
-//     </div>
-//     </div>
-// </div>
 
 // console.log("working");
 //     console.log("here -> slide is: " + slide);
 //     setSlide(slide === testimonials.length - 1 ? 0 : slide + 1);
 //     console.log("another -> slide is: " + slide);
-  
