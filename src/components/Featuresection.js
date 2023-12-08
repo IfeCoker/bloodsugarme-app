@@ -21,7 +21,7 @@ function Featuresection() {
           </div>
         </div>
         <div className="features-frame2">
-          <img src="./featuregroup.png" alt="featuregroup" />
+          <img src="./featuregroup.png" alt="featuregroup" className="featuregroup"/>
         </div>
         <div className="features-frame3">
           <div className="features-frame3a">
