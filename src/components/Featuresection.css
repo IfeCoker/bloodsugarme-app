@@ -120,6 +120,12 @@ h1 {
     .features-frame{
         display: flex;
         flex-direction: column;
-        height: 600px;
+        height: 984px;
+    }
+    .features-frame1,
+    .features-frame3{
+        display: flex;
+        flex-direction: row;
+        width: 328px;
     }
 } 
