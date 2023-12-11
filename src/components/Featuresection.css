@@ -1,7 +1,7 @@
 .features {
   position: absolute;
   height: 550px;
-  top: 920px;
+  top: 910px;
   left: 0;
   right: 0;
   padding: 70px 185px 90px 185px;
@@ -25,16 +25,19 @@ h1 {
   height: 328px;
   gap: 46px;
   display: flex;
+  background-color: transparent;
   /* transition: all ease-out; */
   /* transform: scale(1.1); */
 }
 .features-frame2 {
   max-width: 365.28px;
   height: 324.5px;
-  border: 1px solid #009C9566;
+  /* border: 1px solid #009C9566; */
+  background-color: transparent;
 }
 .featuregroup{
   width: 100%;
+  background-color: transparent;
 }
 .features-frame1,
 .features-frame3 {
@@ -45,6 +48,7 @@ h1 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  background-color: transparent;
 }
 .features-frame1a,
 .features-frame3a {
@@ -56,9 +60,11 @@ h1 {
   text-align: center;
   justify-content: center;
   align-items: center;
+  background-color: transparent;
 }
 .ellipse {
   transition: all ease-in-out;
+  background-color: transparent;
 }
 .ellipse:hover {
   transform: scale(1.1);
@@ -77,11 +83,11 @@ h1 {
   color: #1c2424;
 }
 
-@media only screen and (max-width: 960px) and (min-width: 426px) {
+@media screen and (max-width: 960px) and (min-width: 479px) {
   .features {
     top: 805px;
     /* gap: 30px; */
-    padding: 70px 60px 90px 60px;
+    padding: 60px 60px 90px 60px;
   }
   .features-frame {
     width: 600px;
@@ -110,9 +116,10 @@ h1 {
 }
 }
 
-@media only screen and (max-width: 425px){
+@media screen and (max-width: 480px){
     .features-frame{
         display: flex;
         flex-direction: column;
+        height: 600px;
     }
 } 
