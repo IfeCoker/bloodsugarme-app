@@ -32,7 +32,8 @@ h1 {
 @media screen and (max-width: 480px) {
   .aboutsection{
     padding: 5px 10px 5px 10px;
-    gap: 5px;
+    height: 400px;
+    top: 400px;
   }
   .about-content{
     color: red;
